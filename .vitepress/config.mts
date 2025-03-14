@@ -1,12 +1,13 @@
 import { defineConfig } from 'vitepress';
 
 export default defineConfig({
-  title: 'RoboFTC',
-  description: 'Open Source FTC',
+  title: 'Aarsh\'s ILO Guide',
+  description: 'My Tips For The ILO',
   base: '/', // Set the base URL for deployment
   head: [
     ["link", { rel: "shortcut icon", type: "image/x-icon", href: "/favicon.ico" }]
   ],
+  /*
   build: {
     rollupOptions: {
       external: [
@@ -14,31 +15,84 @@ export default defineConfig({
       ],
     },
   },
+   */
   lastUpdated: true,
   themeConfig: {
-    siteTitle: 'RoboFTC', // Displayed in the nav bar
+    siteTitle: 'Aarsh\'s Guide', // Displayed in the nav bar
     editLink: {
-      pattern: 'https://github.com/RoboFTC/Website/edit/master/:path',
+      pattern: 'https://github.com/International-Logic-Olympiad-ILO/Aarsh-s-Guide/edit/master/:path',
       text: 'Edit this page on GitHub',
     },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'CAD', link: '/cad/deadaxel' },
+      { text: 'Competition', link: 'Competition/Competition-Overview' },
+      { text: 'Tools', link: '/Tool-Tutorials/Tool-Tutorials-Overview' },
+      { text: 'Extra Resources', link: '/Extra-Resources/Extra-Resources-Overview' }
     ],
+
     sidebar: [
       {
-        text: 'RoboCAD',
+        text: 'Overview',
         items: [
-          { text: 'Dead Axle', link: '/cad/deadaxel' },
-          { text: 'Claw', link: '/cad/claw' },
-        ],
+          { text: 'Introduction', link: '/Overview/Introduction' }
+        ]
       },
       {
-        text: 'Robots', // New "Robots" section
+        text: 'Competition',
         items: [
-          { text: 'Eclipse', link: '/robots/eclipse' }, // New subsection for "Eclipse"
-        ],
+          { text: 'Overview', link: '/Competition/Competition-Overview' },
+          { text: 'ILO 2024', link: '' },
+          {
+            items: [
+              {text: 'Overview', link: '/ILO-2024/ILO-2024-Overview'},
+              {text: 'Problems', link: '/ILO-2024/ILO-2024-Problems'}
+            ]
+          },
+          { text: 'ILO 2025', link: '' },
+          {
+            items: [
+              {text: 'Overview', link: '/ILO-2025/ILO-2025-Overview'},
+              {text: 'Problems', link: '/ILO-2025/ILO-2025-Problems'}
+            ]
+          }
+        ]
       },
+      {
+        text: 'Tool Tutorials',
+        items: [
+          {text: 'Overview', link: '/Tool-Tutorials/Tool-Tutorials-Overview'},
+          {text: 'Babbage', link: ''},
+          {
+            items: [
+              {text: 'Overview', link: '/Tool-Tutorials/Babbage/Babbage-Overview'}
+            ]
+          },
+          {text: 'Fitch', link: ''},
+          {
+            items: [
+              {text: 'Overview', link: '/Tool-Tutorials/Fitch/Fitch-Overview'}
+            ]
+          },
+          {text: 'Hilbert', link: ''},
+          {
+            items: [
+              {text: 'Overview', link: '/Tool-Tutorials/Hilbert/Hilbert-Overview'}
+            ]
+          },
+          {text: 'Robinson', link: ''},
+          {
+            items: [
+              {text: 'Overview', link: '/Tool-Tutorials/Robinson/Robinson-Overview'}
+            ]
+          }
+        ]
+      },
+      {
+        text: 'Extra Resources',
+        items: [
+          { text: 'Overview', link: '/Extra-Resources/Extra-Resources-Overview' }
+        ]
+      }
     ],
   },
 });

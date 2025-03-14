@@ -3,27 +3,34 @@
 layout: home
 
 hero:
-  name: "RoboFTC"
-  text: "Open Source FTC"
-  tagline: "At your fingertips!"
-  image:
-        dark: /logo.png
-        light: /logo.png
-        alt: robo ftc Logo
+  name: "Aarsh's ILO Guide"
+  text: "My Tips For The ILO"
+  tagline: "Enjoy the logic!"
+#  image:
+#        dark: /logo.png
+#        light: /logo.png
+#        alt: robo ftc Logo
   actions:
     - theme: brand
-      text: Get Started
-      link: /
+      text: Overview
+      link: /Overview/Introduction
     - theme: alt
-      text: Components
-      link: /cad/deadaxel
+      text: Competition
+      link: /Competition/Competition-Overview
     - theme: alt
-      text: Robots
-      link: /robots/eclipse
+      text: Tool Tutorials
+      link: /Tool-Tutorials/Tool-Tutorials-Overview
+    - theme: alt
+      text: Extra Resources
+      link: /Extra-Resources/Extra-Resources-Overview
 
 features:
-  - title: Components
-    details: Claws, Dead Axles, Active Intakes, etc.
-  - title: Robots
-    details: Currently just Eclipse
+  - title: Competition Overview
+    details: Learn about the International Logic Olympiad and its structure.
+  - title: Problems + Solutions
+    details: Access problems and solutions from past ILO's (and the current one happening as well).
+  - title: Tool Tutorials
+    details: Learn how to use tools like the Fitch-style proof editor to improve your logic skills.
+  - title: Extra Resources
+    details: Find additional resources to help you prepare for the ILO.
 ---
